@@ -1,18 +1,22 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.CDtitle{
-    width: 100%;
-    padding: 20px 0;
-    text-align: center;
+.CDtitle {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
 }
-.CDredBg{
-    background-color:red;
+.CDredBg {
+  background-color: red;
 }
 
-.CDblueBg{
-    background-color: blue;
+.CDblueBg {
+  background-color: blue;
+}
+
+h2 {
+  color: red;
 }
