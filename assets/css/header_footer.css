@@ -18,6 +18,10 @@ a{
 ul{
     list-style: none;
 }
+li{
+    display: flex;
+    align-items: center;
+}
 .CDnavHeader{
     display:flex;
     background-color:white;
@@ -31,21 +35,23 @@ ul{
     width: 1500px;
     justify-content:space-between;
     z-index: 8;
+    padding:0 10px;
 }
 .CDulHeader a{
     color:#499ec0;
     font-size: 36px;
+}
+.CDulHeader a:hover{
+    font-weight: bold;
 }
 .CDulHeader li{
     margin: 0 5px;
 }
 .CDiconUser{
     width:60px;
-    margin-left:20px;
 }
 .CDlistRS{
     display:flex;
-    padding-top: 9px;
 }
 .CDstick{
     height:7px;
@@ -81,9 +87,19 @@ footer nav{
     justify-content: center;
     margin:0 110px 0 20px;
 }
+.CDspanFooter span{
+    color:#499ec0;
+}
 .CDfooterCGU{
     display: flex;
     align-items: center;
+}
+
+.CDfooterCGU a{
+    color:#499ec0
+}
+.CDfooterCGU a:hover{
+    font-weight: bold;
 }
 .CDfooterCGU > div{
     margin: 0 30px;
@@ -148,15 +164,17 @@ footer nav{
     footer nav{
         flex-direction: column-reverse;
         height: 300px;
+        padding:0;
     }
     .CDfooterCGU{
         flex-direction: column-reverse;
     }
     .CDfooterCGU > div{
         border-bottom: 2px solid #82c2debe;
-        width:100vw;
+        width:97vw;
         height:56px;
         padding-top: 9px;
+        margin:0;
     }
     .CDleftFooter{
         height:166px;

@@ -99,22 +99,24 @@ h3{
   color:#338eb4;
 }
 .CDtitlePresentationDeskstop{
-  display: none;
+  
 }
 .CDtextPresentationDeskstop{
-  display: none;
+  text-align: left;
+  min-height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly;
 }
+
 #CDchevLeft{
   width:50%;
   transform:rotate(180deg);
   margin-top: 1px;
   margin-right: 2px;
-
 }
-.CDcarousel__wrapper {
-  
+.CDcarousel__wrapper { 
   max-width: 1050px;
-  /* So we can absolutely position our buttons on top of the carousel */
   position: relative;
 }
 
@@ -123,27 +125,27 @@ h3{
   overflow-x: hidden;
   max-width: 100%;
   aspect-ratio: 15 / 9;
-
-  /* enforces children snapping on the x axis */
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
 }
-
 figure {
-  /* makes sure images always snap in turn */
   scroll-snap-align: start;
   scroll-snap-stop: always;
-
-  /* So will can absolutely position our figcaption */
   position: relative;
-
-  /* Makes sure each image covers the scroll window */
   max-width: 100%;
   flex-shrink: 0;
 }
-
+figcaption {
+  position: absolute;
+  left: 15%;
+  bottom: 26%;
+  padding: 0.5rem;
+  font-size: 44px;
+  font-weight:bold;
+  text-align: center;
+  width: 69%;
+}
 img {
-  /* Make sure the images never get too large */
   max-width: 100%;
   max-height: 100%;
 }
@@ -210,10 +212,10 @@ figure > img{
 
 /**/ 
 .CDtextRoom{
-  margin-left: 10px;
+  margin: 0 0 10px 20px;
 }
 .CDtextRoom > p{
-  line-height:14px;
+  line-height:15px;
 }
 
 #CDsectionRoom > h2{
@@ -227,7 +229,6 @@ figure > img{
 }
 
 #CDsectionRoom h3{
-  color:red;
   margin-bottom: 10px;
   font-weight: 600;
   font-size: 14px;
@@ -249,6 +250,13 @@ figure > img{
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  width:188px;
+}
+.CDparafRoom{
+  display:none;
+}
+.CDparafSpan{
+  width:175px;
 }
 .CDcapacityNb{
   display: flex;
@@ -302,6 +310,9 @@ figure > img{
   padding:40px 40px 0 40px;
   
 }
+.CDadhBtn{
+  flex-direction: column
+}
 .CDtitleAdh{
   margin-bottom:30px;
 }
@@ -328,11 +339,25 @@ figure > img{
   font-weight: 600;
   font-size: 14px;
 }
+.CDbtnSignIn:hover{
+  background-color:white;
+  color: #338EB4;
+  border: 2px solid #338EB4;
+}
+.CDbtnDiscover:hover{
+  background-color:white;
+  color: #338EB4;
+  border: 2px solid #338EB4;
+}
 .CDsectionEvent{
   width:300px;
   padding:60px 0;
   margin: 0 auto;
   text-align: center;
+  overflow: hidden;
+}
+.CDplante{
+  margin-bottom:25px;
 }
 .CDeventCardDesktop{
   display:none;
@@ -388,7 +413,7 @@ figure > img{
   width:93px;
   margin: 15px;
 }
-@media screen and (max-width:600px) {
+@media screen and (min-width:600px) {
   .CDnavHeader{
       height:60px;
   }
@@ -410,11 +435,19 @@ figure > img{
   h3{
       font-size: 24px;
   }
+  figcaption{
+    font-size:  69px;
+  }
   .CDtitlePresentationDeskstop{
     display:block;
   }
   .CDtextPresentationDeskstop{
-    display:block;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .CDtextPresentationDeskstop span{
+    margin-bottom:15px;
   }
   .CDtitlePresentationMobile{
     display:none;
@@ -430,8 +463,17 @@ figure > img{
     flex-wrap: wrap;
     justify-content:center;
   }
+  .CDparafRoom{
+    display:flex;
+  }
+  .CDparafSpan{
+    display:none;
+  }
+  .CDrightPartRoom{
+    width:220px;
+  }
   #CDsectionRoom > div > article{
-    margin:14px;
+    margin:9px;
     width:320px;
   }
   .CDsectionEvent{
@@ -451,13 +493,13 @@ figure > img{
   }
   .CDbtnDiscover{
     height:60px;
-    width:260px;
+    width:290px;
     border-radius:30px;
     font-size: 24px;
   }
   .CDbtnSignIn{
     height:60px;
-    width:260px;
+    width:290px;
     border-radius:30px;
     font-size: 24px;
   }
@@ -470,6 +512,9 @@ figure > img{
     height:500px;
     text-align: center;
     line-height:30px;
+  }
+  figcaption{
+    font-size:93px;
   }
 }
 @media screen and (min-width: 1024px){
@@ -490,18 +535,24 @@ figure > img{
   }
   .CDtextRoom{
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
   }
   .CDtextRoom h3{
-    padding:25px 0 20px 0;
+    padding:25px 0 0  0;
   }
   #CDsectionRoom > div > article{
     flex-direction: column;
     height:400px;
     align-items: center;
-    width:175px;
+    width:180px;
+    justify-content: space-between;
   }
   #CDsectionRoom  p{
     width:150px; 
+    height: 155px;
     text-align: center;
     margin-top: 15px;
   }
@@ -516,6 +567,9 @@ figure > img{
     margin: 15px auto;
     cursor: pointer;
   }
+  .CDlinkRoom:hover{
+    background-color:#E3E3E3;
+  }
   .CDlinkRoom span{
     color: white;
   }
@@ -527,7 +581,23 @@ figure > img{
   }
   .CDrightPartRoom{
     align-items: center;
-
+    height: 300px;
+    justify-content:space-between;
+  }
+  .CDadhBtn{
+    flex-direction: row;
+    margin-top: 60px;
+    width: 800px;
+    align-items:space-between;
+  }
+  .CDadhBtn > a{
+    margin: 0 40px;
+  }
+  .CDlinkBtnDiscover{
+    margin: 0;
+  }
+  figcaption{
+    font-size:141px;
   }
 }
 
