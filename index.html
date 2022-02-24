@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/header_footer.css">
     <meta
       name="description"
       content="L’idée qui a conduit à la création de L’Escale Tiers Lieu est d’abord d’offrir un espace de travail individuel et collectif. Mais s’ajoute à cela trois autres volontés : En faire un lieu d’échanges autour de la culture et du bien-être, ainsi que d’adopter et promouvoir une démarche écocitoyenne…"
@@ -13,6 +13,373 @@
     <title>L'Escale Tiers Lieu - L'espace de coworking collaboratif</title>
   </head>
   <body>
+    <header>
+      <nav class="CDnavHeader">
+          <img class="CDlogo" src="assets/img/logo.png" alt="">
+          <div id="CDburgerCross" class="CDburgerCross">
+              <div id="CDstickTop" class="CDstickTop CDstick"></div>
+              <div id="CDstickMid" class="CDstickMid CDstick"></div>
+              <div id="CDstickBot" class="CDstickBot CDstick"></div>
+          </div>
+          <ul id="CDulHeader" class="CDulHeader CDulHidden">
+              <li>
+                  <a href="">ACCUEIL</a>
+              </li>
+              <li>
+                  <a href="">NOS LOCAUX</a>
+              </li>
+              <li>
+                  <a href="">ADHERENTS</a>
+              </li>
+              <li>
+                  <a id="CDlinkMembers" class="CDnone" href="">NOS MEMBRES</a>
+              </li>
+              <li>
+                <a id="CDlinkBecome" class="CDnone" href="">DEVENIR ADHERENT</a>
+              </li>
+              <li>
+                  <a href="">EVENEMENTS</a>
+              </li>
+              <li>
+                  <a href="">CONTACTS</a>
+              </li>
+              <li class="CDlistRS">
+                  <a href=""><img class="CDiconRS" src="assets/img/linkedin.png" alt=""></a>
+                  <a href=""><img class="CDiconRS" src="assets/img/instagram.png" alt=""></a>
+                  <a href=""><img class="CDiconRS" src="assets/img/facebook.png" alt=""></a>
+              </li>
+          </ul>
+          <a href="">
+              <img class="CDiconUser" src="assets/img/user.png" alt="">
+          </a>
+      </nav>
+  </header>
+    <main>
+      <section class="CDsectionCarroussel">     
+          <h1></h1>
+          <div class="CDcarousel__wrapper">
+            <!--  Left button  -->
+            <button class="CDcarousel__button CDcarousel__button--left">
+              <img id="CDchevLeft" src="assets/img/chevron.png" alt="" />
+            </button>
+
+            <!--  Right button  -->
+            <button class="CDcarousel__button CDcarousel__button--right">
+              <img id="CDchevRight" src="assets/img/chevron.png" alt="" />
+            </button>
+
+            <div class="CDcarousel__scroll-area">
+              <figure>
+                <img src="https://picsum.photos/853/480?random=1" alt="" />
+              </figure>
+
+              <figure>
+                <img src="https://picsum.photos/853/480?random=2" alt="" />
+              </figure>
+
+              <figure>
+                <img
+                  src="https://picsum.photos/853/480?random=3"
+                  alt=""
+                  objectFit="cover"
+                />
+              </figure>
+              <figure>
+                <img
+                  src="https://picsum.photos/853/480?random=4"
+                  alt=""
+                  objectFit="cover"
+                />
+              </figure>
+
+              <figure>
+                <img src="https://picsum.photos/853/480?random=5" alt="" />
+              </figure>
+              <!-- End of placeholder images -->
+            </div>
+          </div>
+      </section>
+      <section id="CDtextPresentation" class="CDsectionWidth">
+        <h2 class="CDtitlePresentationMobile">Bienvenue sur la page de l'Escale Tiers-Lieu</h2>
+        <h2 class="CDtitlePresentationDeskstop">PRESENTATION</h2>
+        <p class="CDtextPresentationMobile">
+          L’Escale Tiers-Lieu est un espace de travail partagé et collaboratif
+          de type coworking qui peut accueillir tous types de travailleurs
+          (indépendants, télétravailleurs, salariés, centre de formation …).
+        </p>
+        <p class="CDtextPresentationDeskstop">L’Escale Tiers-Lieu est un espace de travail partagé et collaboratif de type coworking qui peut accueillir tous types de travailleurs (indépendants, télétravailleurs, salariés, centre de formation …). 
+
+          Il permet de travailler à distance dans un environnement coopératif qui améliore la mise en réseau et le croisement des initiatives. 
+          Ce lieu convivial a également pour ambition d’être un tremplin à la création et au développement économique, social et culturel en territoire médocain. 
+          
+          La gestion de ce lieu de vie collective est organisée sur un mode associatif. L’association L’Escale Tiers-Lieu a été créée lors de son assemblée générale constitutive le 05 septembre 2018. 
+          
+          L’association a pour but de dynamiser le territoire de la communauté de communes Médullienne, en gérant et animant le tiers-lieu. 
+          
+          Les statuts sont consultables à L’Escale ou sur demande par courriel à : escale.tierslieu@gmail.com </p>
+      </section>
+      <section id="CDsectionRoom" class="CDsectionWidth">
+        <h2>NOS BUREAUX</h2>
+        <div>
+        <article>
+          <div class="CDcircleRoom CDpurple">
+            <img class="CDiconRoom" src="assets/img/ruche.svg" alt="" />
+          </div>
+          <div class="CDrightPartRoom">
+            <div class="CDtextRoom">
+              <h3>LA RUCHE</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero
+                molestiae deleniti dicta dignissimos, mollitia veniam.
+              </p>
+              <div class="CDcapacityNb justAround">
+                
+                <span class="CDcapacity CDcolorPurple"><img src="assets/img/peoplePurple.png" alt="" /> 12</span>
+                <img src="assets/img/wifiPurple.png" alt="">
+                <img src="assets/img/blackboardPurple.png" alt="">
+                <img src="assets/img/video-cameraPurple.png" alt="">
+              </div>
+            </div>
+            <div>
+              <a class="CDlinkRoom" href="">
+                <span class="CDarrowText">Lire plus</span>
+                <img class="CDarrow CDarrowMobile" src="assets/img/arrow.png" alt="" />
+                <img class="CDarrow CDarrowDesk"src="assets/img/arrowWhite.png" alt="">
+              </a>
+            </div>
+          </div>
+        </article>
+        <article>
+          <div class="CDcircleRoom CDgold">
+            <img class="CDiconRoom" src="assets/img/cocon.svg" alt="" />
+          </div>
+          <div class="CDrightPartRoom">
+            <div class="CDtextRoom">
+              <h3>LE COCON</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero
+                molestiae deleniti dicta dignissimos, mollitia veniam.
+              </p>
+              <div class="CDcapacityNb justAround">
+                <img src="assets/img/peopleGold.png" alt="" />
+                <img src="assets/img/wifiGold.png" alt="">
+              </div>
+            </div>
+            <div>
+              <a class="CDlinkRoom" href="">
+                <span class="CDarrowText">Lire plus</span>
+                <img class="CDarrow CDarrowMobile" src="assets/img/arrow.png" alt="" />
+                <img class="CDarrow CDarrowDesk"src="assets/img/arrowWhite.png" alt="">
+              </a>
+            </div>
+          </div>
+        </article>
+        <article>
+          <div class="CDcircleRoom CDblue">
+            <img class="CDiconRoom" src="assets/img/coquelicot.svg" alt="" />
+          </div>
+          <div class="CDrightPartRoom">
+            <div class="CDtextRoom">
+              <h3>LE COQUELICOT</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero
+                molestiae deleniti dicta dignissimos, mollitia veniam.
+              </p>
+              <div class="CDcapacityNb justAround">            
+                <span class="CDcapacity CDcolorBlue"><img src="assets/img/peopleBlue.png" alt="" />2</span>
+                <img src="assets/img/wifiBlue.png" alt="">
+              </div>
+            </div>
+            <div>
+              <a class="CDlinkRoom" href="">
+                <span class="CDarrowText">Lire plus</span>
+                <img class="CDarrow CDarrowMobile" src="assets/img/arrow.png" alt="" />
+                <img class="CDarrow CDarrowDesk"src="assets/img/arrowWhite.png" alt="">
+              </a>
+            </div>
+          </div>
+        </article>
+        <article>
+          <div class="CDcircleRoom CDorange">
+            <img class="CDiconRoom" src="assets/img/colibri.svg" alt="" />
+          </div>
+          <div class="CDrightPartRoom">
+            <div class="CDtextRoom">
+              <h3>LE COLIBRI</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero
+                molestiae deleniti dicta dignissimos, mollitia veniam.
+              </p>
+              <div class="CDcapacityNb">
+                
+                <span class="CDcapacity CDcolorOrange justAround"><img src="assets/img/peopleOrange.png" alt="" />6 - 8</span>
+                <img src="assets/img/wifiOrange.png" alt="">
+                <img src="assets/img/blackboardOrange.png" alt="">
+                <img src="assets/img/video-cameraOrange.png" alt="">
+                <img src="assets/img/big-cupOrange.png" alt="">
+              </div>
+            </div>
+            <div>
+              <a class="CDlinkRoom" href="">
+                <span class="CDarrowText">Lire plus</span>
+                <img class="CDarrow CDarrowMobile" src="assets/img/arrow.png" alt="" />
+                <img class="CDarrow CDarrowDesk"src="assets/img/arrowWhite.png" alt="">
+              </a>
+            </div>
+          </div>
+        </article>
+        <article>
+          <div class="CDcircleRoom CDgreen">
+            <img class="CDiconRoom" src="assets/img/Openspace.svg" alt="" />
+          </div>
+          <div class="CDrightPartRoom">
+            <div class="CDtextRoom">
+              <h3>OPENSPACE/CUISINE</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero
+                molestiae deleniti dicta dignissimos, mollitia veniam.
+              </p>
+              <div class="CDcapacityNb justAround">
+                <img src="assets/img/peopleGreen.png" alt="" />
+                <img src="assets/img/wifiGreen.png" alt="">
+                <img src="assets/img/printerGreen.png" alt="">
+                <img src="assets/img/fridgeGreen.png" alt="">
+              </div>
+            </div>
+            <div>
+              <a class="CDlinkRoom" href="">
+                <span class="CDarrowText">Lire plus</span>
+                <img class="CDarrow CDarrowMobile" src="assets/img/arrow.png" alt="" />
+                <img class="CDarrow CDarrowDesk"src="assets/img/arrowWhite.png" alt="">
+              </a>
+            </div>
+          </div>
+        </article>
+        </div>
+      </section>
+      <section id="CDsectionAdh" class="CDsectionAdh">
+        <h2 class="CDtitleAdh">NOS ADHERENTS</h2>
+        <span>Ils nous ont fait confiance</span>
+        <div>
+          <img src="assets/img/mongolfiereHomePage.png" alt="">
+        </div>
+        <a class="CDlinkBtnDiscover" href="">
+          <button class="CDbtnDiscover">Découvrir</button>
+        </a>
+        <a href="">
+          <button class="CDbtnSignIn">S'inscrire</button>
+        </a>
+      </section>
+      <section id="CDsectionEvent" class="CDsectionEvent">
+        <h2>LES EVENEMENTS DU MOIS</h2>
+        <div>
+          <article class="CDgreen CDeventCardMobile">
+            <span class="CDbold">MARDI 14 | 19H -21H</span>
+            <span class="CDcolorWhite">Les RDV de l'emploie: CV et analyse offre d'emploie</span>
+            <span class="CDbold">animé par Aurélie MAURIN BERGEON - AMB CoForm</span>
+            <span class="CDbold">Tarif : 5€/personne</span>
+            <span>Inscription au 06.45.59.25.99 contact@ambcoform.fr</span>
+          </article>
+          <article class="CDgreen CDeventCardMobile">
+            <span class="CDbold">MERCREDI 16 | 14H - 17H30</span>
+            <span class="CDcolorWhite">Evéil la visibilité : Instagram </span>
+            <span class="CDbold">animé par Carole MIGHNARD - E-veille</span>
+            <span class="CDbold">Tarif : 15€/personne</span>
+            <span> Inscription au 06.34.67.50.83 contact@eveille-cm.fr</span>
+          </article>
+          <article class="CDgreen CDeventCardDesktop">
+            <span class="CDbold">MERCREDI 16 | 14H - 17H30</span>
+            <span class="CDcolorWhite">Evéil la visibilité : Instagram </span>
+            <span class="CDbold">animé par Carole MIGHNARD - E-veille</span>
+            <span class="CDbold">Tarif : 15€/personne</span>
+            <span> Inscription au 06.34.67.50.83 contact@eveille-cm.fr</span>
+          </article>
+        </div>
+        <a href="">
+          <button class="CDbtnSignIn">Voir</button>
+        </a>
+      </section>
+      <section class="CDsectionContact CDsectionWidth">
+        <h2>CONTACTS</h2>
+        <span>L’Escale Tiers-Lieu est un espace de travail partagé et collaboratif de type coworking qui peut accueillir tous types de travailleurs (indépendants, télétravailleurs, salariés, centre de formation …). </span>
+        <a href="">
+          <button class="CDbtnSignIn">Voir</button>
+        </a>
+      </section>
+      <section class="CDsectionPartners">        
+        <h2>Nos partenaires</h2>
+        <div>
+        <a href="https://www.campusdulac.com/">
+          <img src="assets/img/campusDuLac.png" alt="" />
+        </a>
+        <a href="https://www.cmso.com/reseau-bancaire-cooperatif/web/accueil">
+          <img src="assets/img/cmso.png" alt="" />
+        </a>
+        <a href="https://coop.tierslieux.net/">
+          <img src="assets/img/coopTiersLieu.png" alt="" />
+        </a>
+        <a href="https://www.gironde.fr/">
+          <img src="assets/img/departementGironde.png" alt="" />
+        </a>
+        <a href="https://www.mairie-castelnau-medoc.fr/">
+          <img src="assets/img/mairieCastelnauMedoc.png" alt="" />
+        </a>
+        <a href="https://www.cdcmedullienne.com/">
+          <img src="assets/img/medullienne.png" alt="" />
+        </a>
+        <a href="https://www.nouvelle-aquitaine.fr/">
+          <img src="assets/img/nouvelleAquitaine.png" alt="" />
+        </a>
+        <a href="https://www.pnr-medoc.fr/">
+          <img src="assets/img/parcNationalMedoc.png" alt="" />
+        </a>
+        <a href="https://www.medoc-tierslieux.fr/">
+          <img src="assets/img/tiersLieu.png" alt="" />
+        </a>
+        <a href="https://www.sbmesdocs.com/">
+          <img src="assets/img/sbMesDocs.jpg" alt="" />
+        </a>
+      </div>
+      </section>
+    </main>
+    <footer>
+      <nav>
+        <div class="CDleftFooter">
+          <div class="CDlogoText">
+            <a class="CDfooterLink" href="">
+              <img class="CDlogo CDlogoBottom" src="assets/img/logo.png" alt="" />
+            </a>
+            <div class="CDspanFooter">
+              <span>L’Escale Tiers-Lieu</span>
+              <span>Association loi 1901</span>
+              <span>1 Avenue pasteur 33480 Castelnau de médoc / France</span>
+              <span>+33 (0)5 57 09 11 40</span>
+            </div>
+          </div>
+          <a class="CDfooterLinkRS" href="">
+            <img class="CDiconRS" src="assets/img/linkedin.png" alt="" />
+          </a>
+          <a class="CDfooterLinkRS" href="">
+            <img class="CDiconRS" src="assets/img/instagram.png" alt="" />
+          </a>
+          <a class="CDfooterLinkRS" href="">
+            <img class="CDiconRS" src="assets/img/facebook.png" alt="" />
+          </a>
+        </div>
+        <div class="CDfooterCGU">
+          <div>
+            <a href="">Contactez nous</a>
+          </div>
+          <div>
+            <a href="">C.G.U</a>
+          </div>
+          <div>
+            <a href="">Mentions Légales</a>
+          </div>
+        </div>
+      </nav>
+    </footer>
+    <script src="assets/js/CDburger.js"></script>
     <script src="assets/js/index.js"></script>
   </body>
 </html>

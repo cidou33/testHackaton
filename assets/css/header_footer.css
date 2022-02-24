@@ -1,0 +1,182 @@
+body{
+    position: relative;
+}
+.CDiconRS{
+    width:37px;
+    margin:0 3px;
+}
+.CDnone{
+    display:none;
+}
+.CDlogo{
+    width:121px;
+    height:148px;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.CDnavHeader{
+    display:flex;
+    background-color:white;
+    height:14%;
+    justify-content:space-between;
+    align-items: center;
+    padding:0 130px
+}
+.CDulHeader{
+    display:flex;
+    width: 1500px;
+    justify-content:space-between;
+    z-index: 8;
+}
+.CDulHeader a{
+    color:#499ec0;
+    font-size: 36px;
+}
+.CDulHeader li{
+    margin: 0 5px;
+}
+.CDiconUser{
+    width:60px;
+    margin-left:20px;
+}
+.CDlistRS{
+    display:flex;
+    padding-top: 9px;
+}
+.CDstick{
+    height:7px;
+    width:50px;
+    background-color: #499ec0;
+    border-radius:  4px;
+    margin: 4px;
+}
+.CDburgerCross{
+    display:none;
+}
+footer nav{
+    background-color:white;
+    height:150px;
+    display: flex;
+    justify-content:space-between;
+    padding: 0 30px;
+}
+.CDleftFooter{
+
+    display: flex;
+}
+.CDfooterLinkRS{
+    height:50px;
+    margin: auto 0;
+}
+.CDlogoText{
+    display: flex;
+}
+.CDspanFooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:0 110px 0 20px;
+}
+.CDfooterCGU{
+    display: flex;
+    align-items: center;
+}
+.CDfooterCGU > div{
+    margin: 0 30px;
+}
+.CDfooterCGU > div > a{
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width:1660px) {
+    .CDulHeader a{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width:1360px) {
+    .CDnavHeader{
+        padding:0;
+    }
+}
+@media screen and (max-width:1100px){
+    .CDulHidden{
+        display:none;
+    }
+    .CDburgerCross{
+        display: block;
+    }
+    .CDnavHeader > a{
+        display: none;
+    }
+    .CDnavHeader{
+        padding:15px;
+    }
+    .CDulHeader{
+        flex-direction: column;
+        position:absolute;
+        background-color:#82c3de;
+        top: 200px;
+        right: 0;
+        align-items: center;
+        width:360px;
+        height:550px;
+        padding: 30px;
+    }
+    .CDulHeader >li > a{
+        color:black;
+    }
+    .CDmidStick{
+        display: none;
+    }   
+    .CDtopStick{
+        transform: rotate(45deg);
+        position:absolute;
+    }  
+    .CDbottomStick{
+        transform: rotate(-45deg);
+    }
+    .CDspanFooter{
+        display: none;
+    }
+}
+@media screen and (max-width:770px) {
+    footer nav{
+        flex-direction: column-reverse;
+        height: 300px;
+    }
+    .CDfooterCGU{
+        flex-direction: column-reverse;
+    }
+    .CDfooterCGU > div{
+        border-bottom: 2px solid #82c2debe;
+        width:100vw;
+        height:56px;
+        padding-top: 9px;
+    }
+    .CDleftFooter{
+        height:166px;
+        justify-content:space-evenly;
+    }   
+    .CDlogoBottom{
+        width: 62px !important;
+        height: 86px !important;
+        margin: 21px 18px 0 21px;
+    }
+}
+@media screen and (max-width:600px) {
+    .CDnavHeader{
+        height:60px;
+    }
+    .CDlogo{
+        height:50px;
+        width:40px;
+    }
+    .CDnavHeader{
+        padding: 0;
+    }
+}
